@@ -1,0 +1,120 @@
+// @media screen and (max-width: 767px) {
+
+// }
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  //   background-color: bisque;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  .page-header {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+.mobile-menu__container {
+  position: relative;
+  padding: 48px 0 48px 40px;
+  overflow: scroll;
+  //   display: flex;
+  //   flex-direction: column;
+}
+.nav__list--menu {
+  margin-bottom: 302px;
+}
+.nav__link--menu {
+  font-size: 40px;
+  color: #212121;
+}
+.contact-list--menu {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 64px;
+}
+.contact-list__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+.contact-list__email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+.social-network--menu {
+  display: flex;
+}
+.social-network__item--menu {
+  padding-left: 10px;
+  padding-right: 10px;
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.social-network__item--menu:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.social-network__link--menu {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu__btn-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+
+    // background-color: blueviolet;
+  }
+  .current {
+    color: var(--text-hover-color);
+  }
+  //   .nav__link--menu {
+  //     font-size: 40px;
+  //     color: #212121;
+  //   }
+}
+.contact-list--menu {
+  row-gap: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}

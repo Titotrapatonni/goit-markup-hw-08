@@ -31,6 +31,7 @@ button {
 }
 .link {
   text-decoration: none;
+  // color: inherit;
   &:hover {
     color: var(--text-hover-color);
   }

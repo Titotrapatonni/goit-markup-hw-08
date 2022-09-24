@@ -1,46 +1,110 @@
-.header {
+.page-header {
+  //   background-color: tomato;
+  height: 60px;
   border-bottom: 1px solid #ececec;
 }
-.header__container {
-    display: flex;
-    align-items: center;
-}
-.nav {
+.page-header__container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-}
-.nav__link {
-    display: inline-block;
-  max-height: 80px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: var(--text-secondary-color);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.nav__list {
-  display: flex;
-  align-items: center;
-  gap: 50px;
 }
 
-.current {
-  color: var(--text-hover-color);
-  position: relative;
-  
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    background: #2196f3;
-    border-radius: 2px;
-    border: 1px solid #2196f3;
-    width: 100%;
-    height: 4px;
-    transform: translateY(1px);
+@media screen and (max-width: 767px) {
+  .nav__list--header {
+    display: none;
+  }
+  .contact-list--header {
+    display: none;
+  }
+  .mobile-menu-btn-open__icon {
+    display: block;
+  }
+  .mobile-menu-btn-open {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .nav__item {
+    column-gap: 32px;
   }
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu-btn-open {
+    display: none;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  .nav__list {
+    display: flex;
+    column-gap: 50px;
+  }
+  .nav__link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 
+    color: #212121;
+  }
+  .nav__link--header {
+    display: inline-block;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+.contact-list__link--header {
+  display: flex;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+
+.contact__icon {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    height: 80px;
+  }
+  .contact-list--header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .current {
+    color: var(--text-hover-color);
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      background: #2196f3;
+      border-radius: 2px;
+      border: 1px solid #2196f3;
+      width: 100%;
+      height: 4px;
+      transform: translateY(1px);
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list--header {
+    flex-direction: row;
+    column-gap: 30px;
+  }
+}

@@ -1,0 +1,21 @@
+.logo {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  color: var(--logo-primary-color);
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+}
+.logo__item--page-header {
+  color: var(--logo-header-color);
+}
+.logo__item--page-footer {
+  color: var(--logo-footer-color);
+}
+.logo--page-footer {
+  margin-bottom: 20px;
+}

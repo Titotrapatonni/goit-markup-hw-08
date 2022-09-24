@@ -1,0 +1,43 @@
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+ul {
+  padding-left: 0;
+}
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background-color: var(--bg-tertiary-color);
+  color: var(--text-primary-color);
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+button {
+  cursor: pointer;
+}
+.link {
+  text-decoration: none;
+  &:hover {
+    color: var(--text-hover-color);
+  }
+  &:focus {
+    color: var(--text-hover-color);
+  }
+}
+.list {
+  list-style: none;
+}

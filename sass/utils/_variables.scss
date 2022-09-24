@@ -1,0 +1,25 @@
+:root {
+  --bg-primary-color: #f5f5f5;
+  --bg-secondary-color: #f5f4fa;
+  --bg-tertiary-color: #ffffff;
+  --bg-hero-color: #2f303a;
+  --bg-footer-color: #2f303a;
+  --bg-button-primary-color: #f5f4fa;
+  --bg-button-secondary-color: #2196f3;
+  --bg-hover-color: #2196f3;
+
+  --text-primary-color: #757575;
+  --text-secondary-color: #212121;
+  --text-hover-color: #2196f3;
+  --text-tertiary-color: #ffffff;
+  --text-contacts-color: rgba(255, 255, 255, 0.6);
+
+  --logo-primary-color: #2196f3;
+  --logo-header-color: #000000;
+  --logo-footer-color: #ffffff;
+
+  --main-font: "Roboto", sans-serif;
+  --font-secondary: "Raleway", sans-serif;
+
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,29 @@
+.speciality__list {
+  display: flex;
+}
+.speciality__item {
+  width: 270px;
+  
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.speciality__overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.speciality .title {
+  font-size: 14px;
+}
+.speciality__label {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,55 @@
+.social-network__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  gap: 10px;
+  transition: background-color var(--transition-dur-and-func),
+    color var(--transition-dur-and-func);
+
+    &:hover {
+  background-color: var(--bg-hover-color);
+  border-radius: 50%;
+}
+.social-network__item &:focus {
+  background-color: var(--bg-hover-color);
+}
+}
+.social-network__link--page-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-network {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-network__suptitle {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--text-tertiary-color);
+  margin-bottom: 20px;
+}
+.social-network__icon {
+  fill: var(--text-tertiary-color);
+
+  .team__item & {
+  fill: #afb1b8;
+  transition: fill var(--transition-dur-and-func);
+}
+.social-network__link:focus & {
+  fill: var(--text-tertiary-color);
+}
+
+.social-network__item:hover &,
+.social-network__item:focus & {
+  fill: #ffffff;
+}
+.social-network__link:hover & {
+  fill: var(--text-tertiary-color);
+}
+}

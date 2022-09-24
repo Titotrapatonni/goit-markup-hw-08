@@ -1,0 +1,21 @@
+.footer {
+  background-color: var(--bg-footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.address__item {
+  margin-bottom: 9px;
+}
+.address__link {
+  display: inline-flex;
+  color: var(--text-tertiary-color);
+  transition: color var(--transition-dur-and-func);
+  font-style: normal;
+}
+.wrapper {
+  display: flex;
+  align-items: baseline;
+}
+.flex-box-address {
+  margin-right: 70px;
+}

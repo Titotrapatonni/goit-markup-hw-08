@@ -175,6 +175,12 @@ button {
   flex-direction: column;
   justify-content: space-between;
 }
+@media screen and (min-width: 320px) {
+  .mobile-menu__container {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
 
 .nav__link--menu {
   font-size: 40px;

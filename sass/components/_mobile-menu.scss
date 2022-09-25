@@ -42,10 +42,11 @@
   flex-direction: column;
   justify-content: space-between;
   //   flex-direction: column;
+  // overflow-y: scroll;
 
   @media screen and (min-width: 320px) {
     overflow-x: hidden;
-    overflow-y: auto;
+    
   }
 }
 .nav__list--menu {
@@ -67,7 +68,7 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
 
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .contact-list__email {
   font-weight: 500;
@@ -90,6 +91,10 @@
   &:last-child {
     padding-right: 0;
   }
+  @media screen and (min-width: 390px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .social-network__item--menu:not(:last-child) {
@@ -101,7 +106,7 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
 
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -116,7 +121,7 @@
     // background-color: blueviolet;
   }
   .current {
-    color: var(--text-hover-color);
+    color: var(--accent-color);
   }
   //   .nav__link--menu {
   //     font-size: 40px;

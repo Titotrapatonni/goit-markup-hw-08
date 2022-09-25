@@ -85,7 +85,7 @@
     row-gap: 10px;
   }
   .current {
-    color: var(--text-hover-color);
+    color: var(--accent-color);
 
     &::after {
       content: "";
@@ -93,9 +93,9 @@
       bottom: 0;
       left: 0;
       display: flex;
-      background: #2196f3;
+      background: var(--accent-color);
       border-radius: 2px;
-      border: 1px solid #2196f3;
+      border: 1px solid var(--accent-color);
       width: 100%;
       height: 4px;
       transform: translateY(1px);

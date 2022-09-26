@@ -4,6 +4,10 @@
   width: 100%;
   height: 100%;
   padding: 40px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  // @media screen and (max-width: 1199px) {
+  // }
 }
 .modal-form__suptitle {
   margin-bottom: 12px;

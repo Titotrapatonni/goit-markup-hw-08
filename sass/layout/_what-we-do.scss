@@ -1,3 +1,12 @@
+.what-we-do {
+  display: none;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .what-we-do {
+display: block;
+}
 .what-we-do__title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -36,8 +45,5 @@
   height: 70px;
   padding: 27px auto;
 }
-@media screen and (max-width: 1199px) {
-  .what-we-do {
-    display: none;
-  }
+  
 }

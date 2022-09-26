@@ -299,10 +299,11 @@ button {
 
 .backdrop {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vw;
   left: 0;
   top: 0;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
@@ -322,23 +323,22 @@ button {
   position: relative;
   background-color: #ffffff;
   width: 100%;
-  overflow: auto;
 }
 @media screen and (max-width: 767px) {
   .modal {
-    max-width: 450px;
+    width: 450px;
+    height: 609px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .modal {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     width: 450px;
     height: 609px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {

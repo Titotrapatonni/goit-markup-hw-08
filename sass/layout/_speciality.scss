@@ -1,28 +1,26 @@
 @media screen and (max-width: 767px) {
-
-    .speciality__item {
-        max-width: 450px;
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
-} 
+  .speciality__item {
+    max-width: 450px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
 @media screen and (min-width: 768px) {
-    .speciality__list {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-    .speciality__item {
-        max-width: 354px;
-    }
+  .speciality__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .speciality__item {
+    max-width: 354px;
+  }
 }
 @media screen and (min-width: 1200px) {
-.speciality__list {
-flex-wrap: nowrap;
-
-}
+  .speciality__list {
+    flex-wrap: nowrap;
+  }
 }
 .speciality__overlay {
   display: flex;
@@ -38,7 +36,7 @@ flex-wrap: nowrap;
   font-size: 14px;
 }
 .speciality__label {
-    text-align: center;
+  text-align: center;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;

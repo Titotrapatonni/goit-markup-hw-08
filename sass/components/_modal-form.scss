@@ -88,12 +88,13 @@
   justify-content: center;
   margin-bottom: 30px;
 
-  @media screen and (max-width: 1199px) {  
-  font-size: 12px;
-  line-height: 1.17;
-}
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 .policy__link {
+  display: inline;
   color: #2196f3;
 }
 .checkbox__input {

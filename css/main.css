@@ -89,6 +89,15 @@ button {
   padding-bottom: 0;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section:nth-child(2) {
+    padding-bottom: 0;
+  }
+}
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -113,6 +122,7 @@ button {
   }
 }
 .container {
+  background-color: rgb(97, 173, 173);
   height: 100%;
 }
 
@@ -475,6 +485,7 @@ button {
 }
 
 .policy__link {
+  display: inline;
   color: #2196f3;
 }
 
@@ -698,8 +709,55 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .hero .hero__title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .speciality__item {
+    max-width: 450px;
+  }
+  .speciality__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .speciality__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .speciality__item {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .speciality__list {
+    flex-wrap: nowrap;
+  }
+}
+.speciality__overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 450px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.speciality .title {
+  font-size: 14px;
+}
+
+.speciality__label {
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */

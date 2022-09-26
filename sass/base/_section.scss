@@ -5,11 +5,12 @@
     padding-bottom: 0;
   }
 }
-
-// .section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-//   &:nth-child(2) {
-//     padding-bottom: 0;
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &:nth-child(2) {
+      padding-bottom: 0;
+    }
+  }
+}

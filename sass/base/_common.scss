@@ -20,6 +20,9 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--bg-tertiary-color);
   color: var(--text-primary-color);
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 img {
   display: block;

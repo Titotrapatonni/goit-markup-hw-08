@@ -1,12 +1,11 @@
 .modal {
-  position: relative;
+  position: absolute;
   background-color: #ffffff;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 
   @media screen and (max-width: 767px) {
-    // max-width: 450px;
     max-width: 450px;
     height: 609px;
   }
@@ -18,9 +17,9 @@
 
   @media screen and (min-width: 1200px) {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
   }

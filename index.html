@@ -257,8 +257,20 @@
           <ul class="team__list list">
             <li class="team__item team-member">
               <picture>
-                <source media="(min-width: 1200px)" srcset="./images/team1-desktop.jpg 1x, ./images/team1-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./images/team1-tablet.jpg 1x, ./images/team1-tablet@2x.jpg 2x">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team1-desktop.jpg    1x,
+                    ./images/team1-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team1-tablet.jpg    1x,
+                    ./images/team1-tablet@2x.jpg 2x
+                  "
+                />
                 <img
                   srcset="./images/team1-mobile@2x.jpg 2x"
                   class="team__img"
@@ -303,8 +315,20 @@
             </li>
             <li class="team__item team-member">
               <picture>
-                                <source media="(min-width: 1200px)" srcset="./images/team2-desktop.jpg 1x, ./images/team2-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./images/team2-tablet.jpg 1x, ./images/team2-tablet@2x.jpg 2x">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team2-desktop.jpg    1x,
+                    ./images/team2-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team2-tablet.jpg    1x,
+                    ./images/team2-tablet@2x.jpg 2x
+                  "
+                />
 
                 <img
                   srcset="./images/team2-mobile@2x.jpg 2x"
@@ -350,8 +374,20 @@
             </li>
             <li class="team__item team-member">
               <picture>
-                                <source media="(min-width: 1200px)" srcset="./images/team3-desktop.jpg 1x, ./images/team3-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./images/team3-tablet.jpg 1x, ./images/team3-tablet@2x.jpg 2x">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team3-desktop.jpg    1x,
+                    ./images/team3-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team3-tablet.jpg    1x,
+                    ./images/team3-tablet@2x.jpg 2x
+                  "
+                />
 
                 <img
                   srcset="./images/team3-mobile@2x.jpg 2x"
@@ -397,8 +433,20 @@
             </li>
             <li class="team__item team-member">
               <picture>
-                                <source media="(min-width: 1200px)" srcset="./images/team4-desktop.jpg 1x, ./images/team4-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./images/team4-tablet.jpg 1x, ./images/team4-tablet@2x.jpg 2x">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team4-desktop.jpg    1x,
+                    ./images/team4-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team4-tablet.jpg    1x,
+                    ./images/team4-tablet@2x.jpg 2x
+                  "
+                />
 
                 <img
                   srcset="./images/team4-mobile@2x.jpg 2x"
@@ -446,9 +494,9 @@
         </div>
       </section>
       <!-- /Our Team -->
-<!-- Clients -->
+      <!-- Clients -->
 
-<section class="clients section">
+      <section class="clients section">
         <div class="container">
           <h2 class="clients__title title">Постійні клієнти</h2>
           <ul class="clients__list list">
@@ -497,10 +545,110 @@
           </ul>
         </div>
       </section>
-
-<!-- /Clients -->
-
+      <!-- /Clients -->
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="wrapper">
+          <div class="flex-box-address">
+            <a href="./index.html" class="logo logo--page-footer"
+              >Web<span class="logo__item--page-footer">Studio</span></a
+            >
+            <address class="address contact">
+              <ul class="address__list contact__list list">
+                <li class="address__item">
+                  <a
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    class="address__link link"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="contact__item contact__item--footer">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="contact__link--page-footer link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contact__item contact__item--footer">
+                  <a
+                    href="tel:+380961111111"
+                    class="contact__link--page-footer link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="flex-box-social">
+            <p class="social-network__suptitle">приєднуйтесь</p>
+            <ul class="social-network list">
+              <li class="social-network__item item">
+                <a
+                  class="social-network__link social-network__link--page-footer link"
+                  href=""
+                  ><svg class="social-network__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-network__item item">
+                <a
+                  class="social-network__link social-network__link--page-footer link"
+                  href=""
+                  ><svg class="social-network__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-network__item item">
+                <a
+                  class="social-network__link social-network__link--page-footer link"
+                  href=""
+                  ><svg class="social-network__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-network__item item">
+                <a
+                  class="social-network__link social-network__link--page-footer link"
+                  href=""
+                  ><svg class="social-network__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Form in Footer -->
+          <form class="subscribe-form">
+            <p class="subscribe-form__suptitle">Підпишіться на розсилку</p>
+            <div class="subscribe-form__wrapper">
+              <label class="subscribe-form__label">
+                <input
+                  type="email"
+                  name="user-email"
+                  class="subscribe-form__input"
+                  placeholder="E-mail"
+                  required
+              /></label>
+              <button type="submit" class="subscribe-btn">
+                <span class="subscribe-btn__text"> Підписатися</span>
+                <svg class="subscribe-btn__icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+          <!-- /Form in Footer -->
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
+
     <!-- Backdrop -->
     <div class="backdrop is-hidden" data-modal>
       <!-- Modal -->
@@ -577,17 +725,18 @@
                 <use href="./images/sprite.svg#icon-check"></use>
               </svg>
             </span>
-            <span>Погоджуюся з розсилкою та приймаю&#160;
-            <a
-              href=""
-              class="policy__link"
-              >Умови договору</a
-            ></span>
+            <span
+              >Погоджуюся з розсилкою та приймаю&#160;
+              <a href="" class="policy__link">Умови договору</a></span
+            >
           </label>
           <button class="submit__btn" type="submit">Відправити</button>
         </form>
+        <!-- /Form -->
       </div>
+      <!-- /Modal -->
     </div>
+    <!-- /Backdrop -->
 
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>

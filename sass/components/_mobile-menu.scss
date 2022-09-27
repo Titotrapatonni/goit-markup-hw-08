@@ -81,6 +81,10 @@
 .social-network--menu {
   display: flex;
   justify-content: flex-start;
+
+  @media screen and (max-width: 359px) {
+    flex-wrap: wrap;
+  }
 }
 .social-network__item--menu {
   padding-left: 5px;

@@ -122,7 +122,6 @@ button {
   }
 }
 .container {
-  background-color: rgb(97, 173, 173);
   height: 100%;
 }
 
@@ -134,11 +133,15 @@ button {
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  margin-right: 87px;
 }
 
 .logo--header {
   color: var(--logo-header-color);
+}
+@media screen and (min-width: 768px) {
+  .logo--header {
+    margin-right: 87px;
+  }
 }
 
 .logo__item--page-footer {
@@ -156,6 +159,16 @@ button {
     margin-right: 93px;
   }
 }
+.contact__link--page-footer {
+  color: var(--text-contacts-color);
+  transition: color var(--transition-dur-and-func);
+  font-style: normal;
+}
+
+.contact__item--footer:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -232,6 +245,11 @@ button {
 .social-network--menu {
   display: flex;
   justify-content: flex-start;
+}
+@media screen and (max-width: 359px) {
+  .social-network--menu {
+    flex-wrap: wrap;
+  }
 }
 
 .social-network__item--menu {
@@ -606,6 +624,96 @@ button {
   fill: var(--text-tertiary-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .subscribe-form {
+    text-align: center;
+    max-width: 450px;
+  }
+}
+
+.subscribe-form__wrapper {
+  width: 450px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form__wrapper {
+    width: 570px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.subscribe-form__suptitle {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--text-tertiary-color);
+  margin-bottom: 20px;
+}
+
+.subscribe-form__input {
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #ffffff;
+}
+.subscribe-form__input:placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form__input {
+    width: 358px;
+  }
+}
+
+.subscribe-btn {
+  display: inline-flex;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  background: #2196f3;
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.subscribe-btn:hover {
+  background-color: #188ce8;
+}
+@media screen and (max-width: 1199px) {
+  .subscribe-btn {
+    margin-top: 20px;
+  }
+}
+
+.subscribe-btn__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.subscribe-btn__icon {
+  margin-left: 10px;
+  fill: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+}
+
 .page-header {
   height: 60px;
   border-bottom: 1px solid #ececec;
@@ -969,9 +1077,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px 32px;
+  padding: 16px 52px;
   width: 210px;
-  height: 92px;
   cursor: pointer;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -980,11 +1087,13 @@ button {
 @media screen and (min-width: 768px) {
   .clients__link {
     width: 226px;
+    padding: 16px 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__link {
     width: 170px;
+    padding: 16px 32px;
   }
 }
 .clients__link:hover, .clients__link:focus {
@@ -1003,4 +1112,52 @@ button {
 }
 .clients__link:focus .clients__icon {
   fill: var(--accent-color);
+}
+
+.footer {
+  background-color: var(--bg-footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.address__item {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  color: var(--text-tertiary-color);
+  transition: color var(--transition-dur-and-func);
+  font-style: normal;
+}
+
+.wrapper {
+  display: flex;
+  gap: 60px;
+}
+@media screen and (min-width: 768px) {
+  .wrapper {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    align-items: baseline;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .wrapper {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .flex-box-address {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

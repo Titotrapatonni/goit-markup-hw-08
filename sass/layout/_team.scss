@@ -1,9 +1,3 @@
-// .team {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-//   background-color: var(--bg-secondary-color);
-// }
-
 .team__title {
   font-style: 28px;
   line-height: 1.18;
@@ -19,7 +13,6 @@
 @media screen and (min-width: 768px) {
   .team__list {
     display: flex;
-    // align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
@@ -51,8 +44,6 @@
   }
 }
 .team__img {
-
-
   max-width: 100%;
   @media screen and (min-width: 768px) {
     max-width: 354px;

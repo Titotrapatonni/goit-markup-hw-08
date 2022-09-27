@@ -4,10 +4,6 @@
   width: 100%;
   height: 100%;
   padding: 40px;
-  // overflow-y: auto;
-  // overflow-x: hidden;
-  // @media screen and (max-width: 1199px) {
-  // }
 }
 .modal-form__suptitle {
   margin-bottom: 12px;
@@ -35,7 +31,6 @@
     border-color: #2196f3;
   }
 }
-
 .modal-form__icon {
   position: absolute;
   top: 50%;
@@ -56,7 +51,6 @@
   border-radius: 4px;
   resize: none;
   padding: 12px 16px;
-
   transition: border-color var(--transition-dur-and-func);
 
   &:focus,
@@ -68,11 +62,9 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-
     color: rgba(117, 117, 117, 0.5);
   }
 }
-
 .modal-form__label {
   font-size: 12px;
   line-height: 1.17;

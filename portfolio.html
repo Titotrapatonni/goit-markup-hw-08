@@ -18,10 +18,9 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- Header -->
     <header class="page-header">
       <div class="container page-header__container">
         <nav class="nav">
@@ -35,7 +34,11 @@
               >
             </li>
             <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link nav__link--header link current">Портфоліо</a>
+              <a
+                href="./portfolio.html"
+                class="nav__link nav__link--header link current"
+                >Портфоліо</a
+              >
             </li>
             <li class="nav__item">
               <a href="" class="nav__link nav__link--header link">Контакти</a>
@@ -87,7 +90,11 @@
               >
             </li>
             <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link nav__link--menu link current">Портфоліо</a>
+              <a
+                href="./portfolio.html"
+                class="nav__link nav__link--menu link current"
+                >Портфоліо</a
+              >
             </li>
             <li class="nav__item">
               <a href="" class="nav__link nav__link--menu link">Контакти</a>
@@ -128,7 +135,6 @@
       <!-- /Mobile menu -->
     </header>
     <!-- /Header -->
-    <!-- Main -->
     <main>
       <section class="portfolio section">
         <div class="container">
@@ -158,10 +164,60 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="./images/portfolio/pf1-mobile.jpg"
-                    alt="Портфоліо фото 1"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pf1-desktop.webp    1x,
+                        ./images/pf1-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf1-desktop.jpg    1x,
+                        ./images/pf1-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf1-tablet.webp    1x,
+                        ./images/pf1-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf1-tablet.jpg    1x,
+                        ./images/pf1-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf1-mobile.webp    1x,
+                        ./images/pf1-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf1-mobile.jpg    1x,
+                        ./images/pf1-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/pf1-mobile.jpg"
+                      alt="Портфоліо фото 1"
+                    />
+                  </picture>
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -177,10 +233,60 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="./images/portfolio/pf2-mobile.jpg"
-                    alt="Портфоліо фото 2"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pf2-desktop.webp    1x,
+                        ./images/pf2-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf2-desktop.jpg    1x,
+                        ./images/pf2-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf2-tablet.webp    1x,
+                        ./images/pf2-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf2-tablet.jpg    1x,
+                        ./images/pf2-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf2-mobile.webp    1x,
+                        ./images/pf2-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf2-mobile.jpg    1x,
+                        ./images/pf2-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/pf2-mobile.jpg"
+                      alt="Портфоліо фото 2"
+                    />
+                  </picture>
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -199,10 +305,60 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="./images/portfolio/pf3-mobile.jpg"
-                    alt="Портфоліо фото 3"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pf3-desktop.webp    1x,
+                        ./images/pf3-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf3-desktop.jpg    1x,
+                        ./images/pf3-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf3-tablet.webp    1x,
+                        ./images/pf3-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf3-tablet.jpg    1x,
+                        ./images/pf3-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf3-mobile.webp    1x,
+                        ./images/pf3-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf3-mobile.jpg    1x,
+                        ./images/pf3-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/pf3-mobile.jpg"
+                      alt="Портфоліо фото 3"
+                    />
+                  </picture>
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -221,10 +377,60 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="./images/portfolio/pf4-mobile.jpg"
-                    alt="Портфоліо фото 4"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pf4-desktop.webp    1x,
+                        ./images/pf4-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf4-desktop.jpg    1x,
+                        ./images/pf4-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf4-tablet.webp    1x,
+                        ./images/pf4-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf4-tablet.jpg    1x,
+                        ./images/pf4-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf4-mobile.webp    1x,
+                        ./images/pf4-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf4-mobile.jpg    1x,
+                        ./images/pf4-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/pf4-mobile.jpg"
+                      alt="Портфоліо фото 4"
+                    />
+                  </picture>
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -243,10 +449,60 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="./images/portfolio/pf5-mobile.jpg"
-                    alt="Портфоліо фото 5"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pf5-desktop.webp    1x,
+                        ./images/pf5-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf5-desktop.jpg    1x,
+                        ./images/pf5-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf5-tablet.webp    1x,
+                        ./images/pf5-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf5-tablet.jpg    1x,
+                        ./images/pf5-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf5-mobile.webp    1x,
+                        ./images/pf5-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf5-mobile.jpg    1x,
+                        ./images/pf5-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/pf5-mobile.jpg"
+                      alt="Портфоліо фото 5"
+                    />
+                  </picture>
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -265,10 +521,60 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="./images/portfolio/pf6-mobile.jpg"
-                    alt="Портфоліо фото 6"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pf6-desktop.webp    1x,
+                        ./images/pf6-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf6-desktop.jpg    1x,
+                        ./images/pf6-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf6-tablet.webp    1x,
+                        ./images/pf6-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf6-tablet.jpg    1x,
+                        ./images/pf6-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf6-mobile.webp    1x,
+                        ./images/pf6-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf6-mobile.jpg    1x,
+                        ./images/pf6-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/pf6-mobile.jpg"
+                      alt="Портфоліо фото 6"
+                    />
+                  </picture>
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -287,10 +593,60 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="./images/portfolio/pf7-mobile.jpg"
-                    alt="Портфоліо фото 7"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pf7-desktop.webp    1x,
+                        ./images/pf7-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf7-desktop.jpg    1x,
+                        ./images/pf7-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf7-tablet.webp    1x,
+                        ./images/pf7-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf7-tablet.jpg    1x,
+                        ./images/pf7-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf7-mobile.webp    1x,
+                        ./images/pf7-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf7-mobile.jpg    1x,
+                        ./images/pf7-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/pf7-mobile.jpg"
+                      alt="Портфоліо фото 7"
+                    />
+                  </picture>
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -309,10 +665,60 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="./images/portfolio/pf8-mobile.jpg"
-                    alt="Портфоліо фото 8"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pf8-desktop.webp    1x,
+                        ./images/pf8-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf8-desktop.jpg    1x,
+                        ./images/pf8-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf8-tablet.webp    1x,
+                        ./images/pf8-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf8-tablet.jpg    1x,
+                        ./images/pf8-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf8-mobile.webp    1x,
+                        ./images/pf8-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf8-mobile.jpg    1x,
+                        ./images/pf8-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/pf8-mobile.jpg"
+                      alt="Портфоліо фото 8"
+                    />
+                  </picture>
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -331,10 +737,60 @@
             <li class="project__item">
               <a href="" class="project__link">
                 <div class="project__overlay">
-                  <img
-                    src="./images/portfolio/pf9-mobile.jpg"
-                    alt="Портфоліо фото 9"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/pf9-desktop.webp    1x,
+                        ./images/pf9-desktop@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf9-desktop.jpg    1x,
+                        ./images/pf9-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf9-tablet.webp    1x,
+                        ./images/pf9-tablet@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf9-tablet.jpg    1x,
+                        ./images/pf9-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf9-mobile.webp    1x,
+                        ./images/pf9-mobile@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/pf9-mobile.jpg    1x,
+                        ./images/pf9-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/pf9-mobile.jpg"
+                      alt="Портфоліо фото 9"
+                    />
+                  </picture>
                   <p class="project__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -352,9 +808,8 @@
         </div>
       </section>
       <!-- /Projects -->
-
-    <!-- </main> -->
- <!-- Footer -->
+    </main>
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="wrapper">
@@ -453,8 +908,6 @@
         </div>
       </div>
     </footer>
-    <!-- /Footer -->
-        <script src="./js/mobile-menu.js"></script>
-
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

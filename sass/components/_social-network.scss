@@ -9,13 +9,13 @@
   transition: background-color var(--transition-dur-and-func),
     color var(--transition-dur-and-func);
 
-    &:hover {
-  background-color: var(--accent-color);
-  border-radius: 50%;
-}
-.social-network__item &:focus {
-  background-color: var(--accent-color);
-}
+  &:hover {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+  }
+  .social-network__item &:focus {
+    background-color: var(--accent-color);
+  }
 }
 .social-network__link--page-footer {
   background-color: rgba(255, 255, 255, 0.1);
@@ -38,18 +38,18 @@
   fill: var(--text-tertiary-color);
 
   .team__item & {
-  fill: #afb1b8;
-  transition: fill var(--transition-dur-and-func);
-}
-.social-network__link:focus & {
-  fill: var(--text-tertiary-color);
-}
+    fill: #afb1b8;
+    transition: fill var(--transition-dur-and-func);
+  }
+  .social-network__link:focus & {
+    fill: var(--text-tertiary-color);
+  }
 
-.social-network__item:hover &,
-.social-network__item:focus & {
-  fill: #ffffff;
-}
-.social-network__link:hover & {
-  fill: var(--text-tertiary-color);
-}
+  .social-network__item:hover &,
+  .social-network__item:focus & {
+    fill: #ffffff;
+  }
+  .social-network__link:hover & {
+    fill: var(--text-tertiary-color);
+  }
 }

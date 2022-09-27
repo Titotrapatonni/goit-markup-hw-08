@@ -1,20 +1,19 @@
 .modal {
   position: relative;
   background-color: #ffffff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 
   @media screen and (max-width: 767px) {
     // max-width: 450px;
     max-width: 450px;
     height: 609px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   @media screen and (min-width: 768px) {
     width: 450px;
     height: 609px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   @media screen and (min-width: 1200px) {

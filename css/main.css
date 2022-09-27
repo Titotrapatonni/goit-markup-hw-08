@@ -215,6 +215,7 @@ button {
 }
 
 .nav__link--menu {
+  font-weight: 500;
   font-size: 40px;
   color: #212121;
 }
@@ -339,35 +340,24 @@ button {
   opacity: 1;
   transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
 }
-@media screen and (max-width: 1199px) {
-  .backdrop {
-    padding: 208px 159px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .backdrop {
-    padding: 93px 15px;
-  }
-}
 
 .modal {
   position: relative;
   background-color: #ffffff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 767px) {
   .modal {
     max-width: 450px;
     height: 609px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .modal {
     width: 450px;
     height: 609px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -877,6 +867,12 @@ button {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-mobile@2x.jpg);
@@ -965,11 +961,15 @@ button {
 }
 
 .speciality__label {
-  text-align: center;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .speciality__label {
+    text-align: center;
+  }
 }
 
 .what-we-do {
@@ -1167,7 +1167,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .projects {
@@ -1221,7 +1220,6 @@ button {
 
 .project__thumb {
   flex-grow: 1;
-  text-align: center;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;

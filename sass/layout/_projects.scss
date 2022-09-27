@@ -1,20 +1,39 @@
 .projects {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   text-align: center;
 
-    @media screen and (min-width: 768px) {
-        
-    }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    // flex-grow: 1;
+  }
 }
 .project__item {
   background-color: var(--bg-tertiary-color);
 
   @media screen and (min-width: 768px) {
-    width: 50%;
+    width: calc((100% - 30px) / 2);
   }
-//   width: 370px;
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+  }
+}
+.project__link {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    height: 100%;
+  }
+  text-decoration: none;
+  transition: box-shadow var(--transition-dur-and-func);
+  color: inherit;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 .project__title {
   font-weight: 700;
@@ -28,6 +47,8 @@
   line-height: 1.88;
 }
 .project__thumb {
+  flex-grow: 1;
+  text-align: center;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
@@ -72,16 +93,4 @@
 }
 .project__title {
   color: var(--text-secondary-color);
-}
-
-.project__link {
-  display: block;
-  text-decoration: none;
-  transition: box-shadow var(--transition-dur-and-func);
-  color: inherit;
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
 }

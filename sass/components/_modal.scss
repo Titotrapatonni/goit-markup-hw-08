@@ -2,8 +2,8 @@
   position: absolute;
   background-color: #ffffff;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 50px;
+  transform: translatex(-50%);
 
   @media screen and (max-width: 767px) {
     max-width: 450px;
